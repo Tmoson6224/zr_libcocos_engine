@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'zr_libcocos_engine_Example' do
+  pod 'zr_libcocos_engine', :path => '../'
+
+  target 'zr_libcocos_engine_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

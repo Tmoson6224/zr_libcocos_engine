@@ -1,0 +1,16 @@
+PODS:
+  - zr_libcocos_engine (0.1.0)
+
+DEPENDENCIES:
+  - zr_libcocos_engine (from `../`)
+
+EXTERNAL SOURCES:
+  zr_libcocos_engine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  zr_libcocos_engine: fecc6f957ad68837f324442052749667ecea115a
+
+PODFILE CHECKSUM: c1898f7da892ebecb7136b4b2d005f41a1e3d9ea
+
+COCOAPODS: 1.12.0

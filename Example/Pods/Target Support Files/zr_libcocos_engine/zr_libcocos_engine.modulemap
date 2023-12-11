@@ -1,0 +1,6 @@
+framework module zr_libcocos_engine {
+  umbrella header "zr_libcocos_engine-umbrella.h"
+
+  export *
+  module * { export * }
+}

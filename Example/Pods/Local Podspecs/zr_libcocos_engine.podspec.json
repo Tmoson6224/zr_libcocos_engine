@@ -1,0 +1,22 @@
+{
+  "name": "zr_libcocos_engine",
+  "version": "0.1.0",
+  "summary": "A short description of zr_libcocos_engine.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tmoson/zr_libcocos_engine",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tmoson": "jstmoson@itcom888.com"
+  },
+  "source": {
+    "git": "https://github.com/tmoson/zr_libcocos_engine.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "zr_libcocos_engine/Classes/**/*"
+}

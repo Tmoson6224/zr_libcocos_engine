@@ -1,0 +1,6 @@
+framework module Pods_zr_libcocos_engine_Tests {
+  umbrella header "Pods-zr_libcocos_engine_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
