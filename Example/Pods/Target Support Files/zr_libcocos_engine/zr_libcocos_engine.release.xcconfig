@@ -1,6 +1,12 @@
+ARCHS = arm64 x86_64
+ARCHS_STANDARD = arm64 x86_64
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/zr_libcocos_engine
+CURRENT_PROJECT_VERSION = 0.0.2
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../zr_libcocos_engine/Libraries" "${PODS_ROOT}/../../zr_libcocos_engine/Libraries/glslang" "${PODS_ROOT}/../../zr_libcocos_engine/Libraries/spirv-cross"
+OTHER_LDFLAGS = $(inherited) -l"GenericCodeGen" -l"MachineIndependent" -l"OGLCompiler" -l"OSDependent" -l"SPIRV" -l"SPIRV-Tools" -l"SPIRV-Tools-opt" -l"boost_container" -l"c++" -l"crypto" -l"glslang" -l"glslang-default-resource-limits" -l"iconv" -l"jpeg" -l"png" -l"spirv-cross-core" -l"spirv-cross-glsl" -l"spirv-cross-msl" -l"sqlite3" -l"ssl" -l"stdc++" -l"tbb_static" -l"uv_a" -l"v8_monolith" -l"webp" -l"z" -framework "AVFoundation" -framework "AVKit" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreText" -framework "CoreVideo" -framework "Foundation" -framework "GameController" -framework "JavaScriptCore" -framework "Metal" -framework "MetalKit" -framework "MetalPerformanceShaders" -framework "MobileCoreServices" -framework "OpenAL" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_DEVELOPMENT_LANGUAGE = ${DEVELOPMENT_LANGUAGE}
@@ -9,4 +15,8 @@ PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
 PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
 SKIP_INSTALL = YES
+USER_HEADER_SEARCH_PATH = ${POD_ROOT}
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
+VALID_ARCHS = arm64 x86_64
+VALID_ARCHS[sdk=iphoneos*] = arm64
+VALID_ARCHS[sdk=iphonesimulator*] = x86_64

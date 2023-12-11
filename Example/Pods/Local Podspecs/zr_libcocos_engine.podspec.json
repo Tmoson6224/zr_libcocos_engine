@@ -1,22 +1,69 @@
 {
   "name": "zr_libcocos_engine",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "summary": "A short description of zr_libcocos_engine.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/tmoson/zr_libcocos_engine",
+  "homepage": "https://github.com/Tmoson6224/zr_libcocos_engine",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "tmoson": "jstmoson@itcom888.com"
+    "tmoson": "tmoson6224@gmail.com"
   },
   "source": {
-    "git": "https://github.com/tmoson/zr_libcocos_engine.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Tmoson6224/zr_libcocos_engine.git",
+    "tag": "0.0.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "zr_libcocos_engine/Classes/**/*"
+  "user_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "pod_target_xcconfig": {
+    "USER_HEADER_SEARCH_PATH": "${POD_ROOT}",
+    "ARCHS": "arm64 x86_64",
+    "ARCHS_STANDARD": "arm64 x86_64",
+    "VALID_ARCHS": "arm64 x86_64",
+    "VALID_ARCHS[sdk=iphoneos*]": "arm64",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64",
+    "GCC_GENERATE_DEBUGGING_SYMBOLS": "YES",
+    "CURRENT_PROJECT_VERSION": "0.0.2"
+  },
+  "source_files": "zr_libcocos_engine/Classes/**/*",
+  "frameworks": [
+    "CoreVideo",
+    "AudioToolbox",
+    "OpenGLES",
+    "CoreMotion",
+    "CoreText",
+    "CFNetwork",
+    "CoreFoundation",
+    "MobileCoreServices",
+    "GameController",
+    "WebKit",
+    "CoreMedia",
+    "AVKit",
+    "CoreGraphics",
+    "SystemConfiguration",
+    "QuartzCore",
+    "JavaScriptCore",
+    "Security",
+    "OpenAL",
+    "AVFoundation",
+    "Foundation",
+    "UIKit",
+    "Metal",
+    "MetalKit",
+    "MetalPerformanceShaders"
+  ],
+  "libraries": [
+    "c++",
+    "stdc++",
+    "z",
+    "sqlite3",
+    "iconv"
+  ],
+  "vendored_libraries": "zr_libcocos_engine/Libraries/**/*.a"
 }

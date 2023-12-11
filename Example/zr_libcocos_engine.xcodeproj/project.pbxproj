@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B03F727DC55DA4B866ACC23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0B03F727DC55DA4B866ACC23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2DE48AB2BC57F020F28425C4 /* Pods-zr_libcocos_engine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zr_libcocos_engine_Example.debug.xcconfig"; path = "Target Support Files/Pods-zr_libcocos_engine_Example/Pods-zr_libcocos_engine_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4C359A0E5FDE0003E29F5709 /* zr_libcocos_engine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = zr_libcocos_engine.podspec; path = ../zr_libcocos_engine.podspec; sourceTree = "<group>"; };
+		4C359A0E5FDE0003E29F5709 /* zr_libcocos_engine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = zr_libcocos_engine.podspec; path = ../zr_libcocos_engine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* zr_libcocos_engine_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zr_libcocos_engine_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		8E06C2A58C4F6207351AF729 /* Pods-zr_libcocos_engine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zr_libcocos_engine_Example.release.xcconfig"; path = "Target Support Files/Pods-zr_libcocos_engine_Example/Pods-zr_libcocos_engine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8F498FBAF8CE2FA32022B223 /* Pods_zr_libcocos_engine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zr_libcocos_engine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A909C58F1ED2E32A1F937FB4 /* Pods-zr_libcocos_engine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zr_libcocos_engine_Tests.release.xcconfig"; path = "Target Support Files/Pods-zr_libcocos_engine_Tests/Pods-zr_libcocos_engine_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EE4B83DF0BAA80FC62EC5D47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EE4B83DF0BAA80FC62EC5D47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F29771FBF4C93B21A5216078 /* Pods-zr_libcocos_engine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zr_libcocos_engine_Tests.debug.xcconfig"; path = "Target Support Files/Pods-zr_libcocos_engine_Tests/Pods-zr_libcocos_engine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				F29771FBF4C93B21A5216078 /* Pods-zr_libcocos_engine_Tests.debug.xcconfig */,
 				A909C58F1ED2E32A1F937FB4 /* Pods-zr_libcocos_engine_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
