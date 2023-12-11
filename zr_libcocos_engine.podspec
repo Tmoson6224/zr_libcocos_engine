@@ -21,22 +21,36 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/tmoson/zr_libcocos_engine'
+  s.homepage         = 'https://github.com/Tmoson6224/zr_libcocos_engine'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'tmoson' => 'jstmoson@itcom888.com' }
-  s.source           = { :git => 'https://github.com/tmoson/zr_libcocos_engine.git', :tag => s.version.to_s }
+  s.author           = { 'tmoson' => 'tmoson6224@gmail.com' }
+  s.source           = { :git => 'https://github.com/Tmoson6224/zr_libcocos_engine.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.platform = :ios
+  s.ios.deployment_target = '12.0'
+  
+  # 用户工程 bitcode 设置为关闭
+  s.user_target_xcconfig = {
+      'ENABLE_BITCODE' => 'NO',
+  }
+  
+  # pod 根目录
+  s.pod_target_xcconfig = {
+      'USER_HEADER_SEARCH_PATH' => '${POD_ROOT}',
+      'ARCHS' => 'arm64 x86_64',
+      'ARCHS_STANDARD' => 'arm64 x86_64',
+      'VALID_ARCHS' => 'arm64 x86_64',
+      'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
+      'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+      'GCC_GENERATE_DEBUGGING_SYMBOLS' => 'YES',
+      'CURRENT_PROJECT_VERSION' => s.version
+  }
 
   s.source_files = 'zr_libcocos_engine/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'zr_libcocos_engine' => ['zr_libcocos_engine/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreVideo', 'AudioToolbox', 'OpenGLES', 'CoreMotion', 'CoreText', 'CFNetwork', 'CoreFoundation', 'MobileCoreServices', 'GameController', 'WebKit', 'CoreMedia', 'AVKit', 'CoreGraphics', 'SystemConfiguration', 'QuartzCore', 'JavaScriptCore', 'Security', 'OpenAL', 'AVFoundation', 'Foundation', 'UIKit', 'Metal', 'MetalKit', 'MetalPerformanceShaders'
+  s.librarys = 'c++', 'stdc++', 'z', 'sqlite3', 'iconv'
 end

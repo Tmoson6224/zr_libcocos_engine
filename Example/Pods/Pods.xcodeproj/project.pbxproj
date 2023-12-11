@@ -10,7 +10,6 @@
 		02356DA1091641BEDEBDC1DE1F261D2C /* zr_libcocos_engine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B5A3C43CD3CB1E9EF420C83B2AE102 /* zr_libcocos_engine-dummy.m */; };
 		4E71310F4A57EC5EA88C70662A561899 /* Pods-zr_libcocos_engine_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A3BC5738F0D903A2E265C4D9F69C4A /* Pods-zr_libcocos_engine_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E9241DFD6D3A2116810D1C8877BA06D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6C911E6C343CB7912D33D774DBC9B460 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDDC4C791CA983E253929CE48D236D9 /* ReplaceMe.m */; };
 		7B7F46FFB5D68E038966BCF9F5035E64 /* Pods-zr_libcocos_engine_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987270F19F98194BF7C4EBEAD306C397 /* Pods-zr_libcocos_engine_Tests-dummy.m */; };
 		867411607D6C3F8D23E22151FABF8A24 /* Pods-zr_libcocos_engine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4EC65B56834C6929B91D2BFFFA1619 /* Pods-zr_libcocos_engine_Example-dummy.m */; };
 		9D8CB874E882584073C9BA64E48D4E3E /* Pods-zr_libcocos_engine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B43C15085C196004F3B9FC9F62B8CCB /* Pods-zr_libcocos_engine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,7 +64,6 @@
 		B6D8F808C0957FB44DCACD946C8CDFA8 /* zr_libcocos_engine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = zr_libcocos_engine.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		C7CBFE28D66F5E4A65FA21E58D99E119 /* Pods-zr_libcocos_engine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zr_libcocos_engine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D2736CD3D282B7A1B5CB4986F9878520 /* Pods-zr_libcocos_engine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zr_libcocos_engine_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DFDDC4C791CA983E253929CE48D236D9 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = zr_libcocos_engine/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		EBA461BC6B659F97C6E6DF650B5EA1EB /* Pods-zr_libcocos_engine_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zr_libcocos_engine_Tests-Info.plist"; sourceTree = "<group>"; };
 		F0EBF3BD126C322EF4664F003B5D9B6A /* Pods-zr_libcocos_engine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-zr_libcocos_engine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FD210E21F5AE8858CBC8E784BC030854 /* Pods-zr_libcocos_engine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-zr_libcocos_engine_Example.modulemap"; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		456582382E11E3D9D0796B48A6E932E8 /* zr_libcocos_engine */ = {
 			isa = PBXGroup;
 			children = (
-				DFDDC4C791CA983E253929CE48D236D9 /* ReplaceMe.m */,
 				BB66023C22E147AF52FC87CC10B8176F /* Pod */,
 				BA15AC6B2C2B04FF8E21C849BC4740DD /* Support Files */,
 			);
@@ -375,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C911E6C343CB7912D33D774DBC9B460 /* ReplaceMe.m in Sources */,
 				02356DA1091641BEDEBDC1DE1F261D2C /* zr_libcocos_engine-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
