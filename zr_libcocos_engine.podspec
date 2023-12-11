@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zr_libcocos_engine'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of zr_libcocos_engine.'
+  s.version          = '0.0.1'
+  s.summary          = "A short description of zr_libcocos_engine."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -52,6 +52,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreVideo', 'AudioToolbox', 'OpenGLES', 'CoreMotion', 'CoreText', 'CFNetwork', 'CoreFoundation', 'MobileCoreServices', 'GameController', 'WebKit', 'CoreMedia', 'AVKit', 'CoreGraphics', 'SystemConfiguration', 'QuartzCore', 'JavaScriptCore', 'Security', 'OpenAL', 'AVFoundation', 'Foundation', 'UIKit', 'Metal', 'MetalKit', 'MetalPerformanceShaders'
-  s.librarys = 'c++', 'stdc++', 'z', 'sqlite3', 'iconv'
+  s.libraries = 'c++', 'stdc++', 'z', 'sqlite3', 'iconv'
   s.ios.vendored_libraries = 'zr_libcocos_engine/Libraries/**/*.a'
 end
