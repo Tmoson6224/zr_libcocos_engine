@@ -53,4 +53,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreVideo', 'AudioToolbox', 'OpenGLES', 'CoreMotion', 'CoreText', 'CFNetwork', 'CoreFoundation', 'MobileCoreServices', 'GameController', 'WebKit', 'CoreMedia', 'AVKit', 'CoreGraphics', 'SystemConfiguration', 'QuartzCore', 'JavaScriptCore', 'Security', 'OpenAL', 'AVFoundation', 'Foundation', 'UIKit', 'Metal', 'MetalKit', 'MetalPerformanceShaders'
   s.librarys = 'c++', 'stdc++', 'z', 'sqlite3', 'iconv'
+  s.ios.vendored_libraries = 'zr_libcocos_engine/Libraries/**/*.a'
 end
